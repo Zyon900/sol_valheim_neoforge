@@ -44,7 +44,7 @@ public class CapabilityRegistry {
                 ModCapabilities.VALHEIM_FOOD,   // The handle we just created
                 EntityType.PLAYER,              // Target entity type
                 // Provider argument: Pass null, relying on AttachCapabilitiesEvent
-                null
+                (player, context) -> null
                 // OR: (player, context) -> null
         );
         solneo.LOGGER.debug("Registered VALHEIM_FOOD handle for Player entities.");
